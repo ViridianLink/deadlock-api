@@ -137,7 +137,7 @@ jiff = { version = "*", default-features = false, features = [
   "serde",
   "std",
 ] }
-reqwest = { version = "*", default-features = false, features = [
+reqwest = { version = "0.13", default-features = false, features = [
   "rustls",
   "http2",
   "query",

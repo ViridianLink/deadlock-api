@@ -1,0 +1,621 @@
+{
+ "nodes": [
+  {
+   "column": 0,
+   "item_id": 968099481,
+   "wins": 8657,
+   "losses": 9703,
+   "matches": 18360,
+   "players": 18360,
+   "total_kills": 118640,
+   "total_deaths": 123010,
+   "total_assists": 200038,
+   "adjusted_win_rate": 0.4635750458056523,
+   "avg_net_worth_at_buy": 26559.773583877995
+  },
+  {
+   "column": 0,
+   "item_id": 7409189,
+   "wins": 7949,
+   "losses": 8921,
+   "matches": 16870,
+   "players": 16870,
+   "total_kills": 110369,
+   "total_deaths": 113043,
+   "total_assists": 183298,
+   "adjusted_win_rate": 0.4745970790378309,
+   "avg_net_worth_at_buy": 7263.617960877297
+  },
+  {
+   "column": 0,
+   "item_id": 668299740,
+   "wins": 7772,
+   "losses": 8954,
+   "matches": 16726,
+   "players": 16726,
+   "total_kills": 107778,
+   "total_deaths": 112743,
+   "total_assists": 180824,
+   "adjusted_win_rate": 0.4620768185413769,
+   "avg_net_worth_at_buy": 21642.637988760016
+  },
+  {
+   "column": 0,
+   "item_id": 1548066885,
+   "wins": 7011,
+   "losses": 7971,
+   "matches": 14982,
+   "players": 14982,
+   "total_kills": 96176,
+   "total_deaths": 99136,
+   "total_assists": 162271,
+   "adjusted_win_rate": 0.46866079153920254,
+   "avg_net_worth_at_buy": 10361.347817380856
+  },
+  {
+   "column": 0,
+   "item_id": 4104549924,
+   "wins": 4634,
+   "losses": 5305,
+   "matches": 9939,
+   "players": 9939,
+   "total_kills": 66210,
+   "total_deaths": 66721,
+   "total_assists": 107654,
+   "adjusted_win_rate": 0.48068742160439976,
+   "avg_net_worth_at_buy": 4074.173860549351
+  },
+  {
+   "column": 0,
+   "item_id": 2356412290,
+   "wins": 3233,
+   "losses": 3551,
+   "matches": 6784,
+   "players": 6784,
+   "total_kills": 46409,
+   "total_deaths": 44494,
+   "total_assists": 73561,
+   "adjusted_win_rate": 0.46828368617277727,
+   "avg_net_worth_at_buy": 4745.219044811321
+  },
+  {
+   "column": 0,
+   "item_id": 2829638276,
+   "wins": 2735,
+   "losses": 3122,
+   "matches": 5857,
+   "players": 5857,
+   "total_kills": 35716,
+   "total_deaths": 37709,
+   "total_assists": 64611,
+   "adjusted_win_rate": 0.46594876944449465,
+   "avg_net_worth_at_buy": 21228.878948267033
+  },
+  {
+   "column": 0,
+   "item_id": 2603935618,
+   "wins": 2340,
+   "losses": 2200,
+   "matches": 4540,
+   "players": 4540,
+   "total_kills": 32584,
+   "total_deaths": 29126,
+   "total_assists": 53257,
+   "adjusted_win_rate": 0.4968931209164341,
+   "avg_net_worth_at_buy": 3706.172246696035
+  },
+  {
+   "column": 0,
+   "item_id": 1672893796,
+   "wins": 1291,
+   "losses": 1255,
+   "matches": 2546,
+   "players": 2546,
+   "total_kills": 16652,
+   "total_deaths": 16159,
+   "total_assists": 29820,
+   "adjusted_win_rate": 0.5051582314111767,
+   "avg_net_worth_at_buy": 9516.599764336213
+  },
+  {
+   "column": 0,
+   "item_id": 876563814,
+   "wins": 1341,
+   "losses": 1194,
+   "matches": 2535,
+   "players": 2535,
+   "total_kills": 17678,
+   "total_deaths": 15740,
+   "total_assists": 29551,
+   "adjusted_win_rate": 0.5648959221441104,
+   "avg_net_worth_at_buy": 3878.0938856015778
+  },
+  {
+   "column": 0,
+   "item_id": 2951612397,
+   "wins": 1134,
+   "losses": 1120,
+   "matches": 2254,
+   "players": 2254,
+   "total_kills": 16681,
+   "total_deaths": 15544,
+   "total_assists": 24669,
+   "adjusted_win_rate": 0.5284257399428964,
+   "avg_net_worth_at_buy": 3732.1557231588286
+  },
+  {
+   "column": 0,
+   "item_id": 84321454,
+   "wins": 981,
+   "losses": 1027,
+   "matches": 2008,
+   "players": 2008,
+   "total_kills": 14851,
+   "total_deaths": 13845,
+   "total_assists": 22060,
+   "adjusted_win_rate": 0.497716984734782,
+   "avg_net_worth_at_buy": 3796.836653386454
+  },
+  {
+   "column": 0,
+   "item_id": 3776945997,
+   "wins": 802,
+   "losses": 777,
+   "matches": 1579,
+   "players": 1579,
+   "total_kills": 10010,
+   "total_deaths": 9778,
+   "total_assists": 18499,
+   "adjusted_win_rate": 0.5124175122575906,
+   "avg_net_worth_at_buy": 4171.268524382521
+  },
+  {
+   "column": 0,
+   "item_id": 2081037738,
+   "wins": 722,
+   "losses": 717,
+   "matches": 1439,
+   "players": 1439,
+   "total_kills": 10239,
+   "total_deaths": 9152,
+   "total_assists": 16069,
+   "adjusted_win_rate": 0.44720883758033114,
+   "avg_net_worth_at_buy": 3647.009728978457
+  },
+  {
+   "column": 0,
+   "item_id": 3633614685,
+   "wins": 564,
+   "losses": 665,
+   "matches": 1229,
+   "players": 1229,
+   "total_kills": 7827,
+   "total_deaths": 7709,
+   "total_assists": 13054,
+   "adjusted_win_rate": 0.4717840763342266,
+   "avg_net_worth_at_buy": 5154.989422294549
+  },
+  {
+   "column": 0,
+   "item_id": 3970837787,
+   "wins": 486,
+   "losses": 439,
+   "matches": 925,
+   "players": 925,
+   "total_kills": 5791,
+   "total_deaths": 5571,
+   "total_assists": 11090,
+   "adjusted_win_rate": 0.5168691666324977,
+   "avg_net_worth_at_buy": 4149.539459459459
+  },
+  {
+   "column": 0,
+   "item_id": 1439347412,
+   "wins": 394,
+   "losses": 455,
+   "matches": 849,
+   "players": 849,
+   "total_kills": 4809,
+   "total_deaths": 5685,
+   "total_assists": 9446,
+   "adjusted_win_rate": 0.4623232766369032,
+   "avg_net_worth_at_buy": 14115.554770318022
+  },
+  {
+   "column": 0,
+   "item_id": 3399065363,
+   "wins": 412,
+   "losses": 416,
+   "matches": 828,
+   "players": 828,
+   "total_kills": 5065,
+   "total_deaths": 5204,
+   "total_assists": 9324,
+   "adjusted_win_rate": 0.49143437568193693,
+   "avg_net_worth_at_buy": 7197.501207729469
+  },
+  {
+   "column": 0,
+   "item_id": 1710079648,
+   "wins": 366,
+   "losses": 418,
+   "matches": 784,
+   "players": 784,
+   "total_kills": 4945,
+   "total_deaths": 5206,
+   "total_assists": 8614,
+   "adjusted_win_rate": 0.46347641211469914,
+   "avg_net_worth_at_buy": 13420.201530612245
+  },
+  {
+   "column": 0,
+   "item_id": 3862866912,
+   "wins": 245,
+   "losses": 297,
+   "matches": 542,
+   "players": 542,
+   "total_kills": 3154,
+   "total_deaths": 3592,
+   "total_assists": 5579,
+   "adjusted_win_rate": 0.40472024408163426,
+   "avg_net_worth_at_buy": 32217.422509225093
+  }
+ ],
+ "edges": [
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 876563814,
+   "wins": 5538,
+   "losses": 6338,
+   "matches": 11876
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 876563814,
+   "wins": 5374,
+   "losses": 6106,
+   "matches": 11480
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 876563814,
+   "wins": 5246,
+   "losses": 6092,
+   "matches": 11338
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 2081037738,
+   "wins": 5172,
+   "losses": 5617,
+   "matches": 10789
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 876563814,
+   "wins": 4795,
+   "losses": 5591,
+   "matches": 10386
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 2081037738,
+   "wins": 4879,
+   "losses": 5336,
+   "matches": 10215
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 2951612397,
+   "wins": 4733,
+   "losses": 5393,
+   "matches": 10126
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 2951612397,
+   "wins": 4655,
+   "losses": 5442,
+   "matches": 10097
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 2081037738,
+   "wins": 4726,
+   "losses": 5266,
+   "matches": 9992
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 2951612397,
+   "wins": 4627,
+   "losses": 5314,
+   "matches": 9941
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 2951612397,
+   "wins": 4167,
+   "losses": 4808,
+   "matches": 8975
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 2081037738,
+   "wins": 4192,
+   "losses": 4614,
+   "matches": 8806
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 2356412290,
+   "wins": 3586,
+   "losses": 4118,
+   "matches": 7704
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 2356412290,
+   "wins": 3347,
+   "losses": 3921,
+   "matches": 7268
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 4104549924,
+   "to_item_id": 876563814,
+   "wins": 3259,
+   "losses": 3810,
+   "matches": 7069
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 4104549924,
+   "to_item_id": 2951612397,
+   "wins": 3301,
+   "losses": 3707,
+   "matches": 7008
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 2603935618,
+   "wins": 3146,
+   "losses": 3714,
+   "matches": 6860
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 2356412290,
+   "wins": 3073,
+   "losses": 3742,
+   "matches": 6815
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 2603935618,
+   "wins": 3036,
+   "losses": 3603,
+   "matches": 6639
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 2356412290,
+   "wins": 3008,
+   "losses": 3604,
+   "matches": 6612
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 4104549924,
+   "to_item_id": 2081037738,
+   "wins": 3109,
+   "losses": 3394,
+   "matches": 6503
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 2603935618,
+   "wins": 2901,
+   "losses": 3498,
+   "matches": 6399
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 2603935618,
+   "wins": 2685,
+   "losses": 3172,
+   "matches": 5857
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 4104549924,
+   "wins": 2517,
+   "losses": 2810,
+   "matches": 5327
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2356412290,
+   "to_item_id": 876563814,
+   "wins": 2306,
+   "losses": 2533,
+   "matches": 4839
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2356412290,
+   "to_item_id": 2951612397,
+   "wins": 2325,
+   "losses": 2503,
+   "matches": 4828
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 4104549924,
+   "wins": 2066,
+   "losses": 2429,
+   "matches": 4495
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2356412290,
+   "to_item_id": 2081037738,
+   "wins": 2126,
+   "losses": 2290,
+   "matches": 4416
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 4104549924,
+   "wins": 2067,
+   "losses": 2293,
+   "matches": 4360
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 4104549924,
+   "to_item_id": 2603935618,
+   "wins": 1853,
+   "losses": 2211,
+   "matches": 4064
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2829638276,
+   "to_item_id": 876563814,
+   "wins": 1757,
+   "losses": 2033,
+   "matches": 3790
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 968099481,
+   "to_item_id": 3776945997,
+   "wins": 1677,
+   "losses": 1861,
+   "matches": 3538
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 4104549924,
+   "wins": 1590,
+   "losses": 1863,
+   "matches": 3453
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 4104549924,
+   "to_item_id": 2356412290,
+   "wins": 1503,
+   "losses": 1950,
+   "matches": 3453
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2829638276,
+   "to_item_id": 2081037738,
+   "wins": 1434,
+   "losses": 1542,
+   "matches": 2976
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2603935618,
+   "to_item_id": 2081037738,
+   "wins": 1541,
+   "losses": 1422,
+   "matches": 2963
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 1548066885,
+   "to_item_id": 3776945997,
+   "wins": 1372,
+   "losses": 1533,
+   "matches": 2905
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 2603935618,
+   "to_item_id": 876563814,
+   "wins": 1454,
+   "losses": 1398,
+   "matches": 2852
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 668299740,
+   "to_item_id": 3776945997,
+   "wins": 1331,
+   "losses": 1471,
+   "matches": 2802
+  },
+  {
+   "from_column": 0,
+   "from_item_id": 7409189,
+   "to_item_id": 3776945997,
+   "wins": 1297,
+   "losses": 1441,
+   "matches": 2738
+  }
+ ],
+ "summary": {
+  "wins": 10172,
+  "losses": 11482,
+  "matches": 21654,
+  "players": 7467,
+  "total_kills": 138143,
+  "total_deaths": 144820,
+  "total_assists": 236027,
+  "avg_net_worth": 42308.30899602845,
+  "avg_duration_s": 2171.0948554539577
+ },
+ "baseline": {
+  "wins": 10172,
+  "losses": 11482,
+  "matches": 21654,
+  "players": 7467,
+  "total_kills": 138143,
+  "total_deaths": 144820,
+  "total_assists": 236027,
+  "avg_net_worth": 42308.30899602845,
+  "avg_duration_s": 2171.0948554539577
+ },
+ "reached_per_column": [
+  21647,
+  21601,
+  21162,
+  15014
+ ],
+ "reached_wins_per_column": [
+  10172,
+  10155,
+  9943,
+  7149
+ ],
+ "leave_one_out": []
+}

@@ -1,0 +1,87 @@
+[
+ {
+  "assigned_lane": 1,
+  "hero_ids": [
+   1,
+   31
+  ],
+  "enemy_hero_ids": [
+   2,
+   15
+  ],
+  "wins": 42,
+  "matches_played": 80,
+  "sample_time_s": 900,
+  "net_worth_diff": 530.4,
+  "sample_matches": 80,
+  "stats": {}
+ },
+ {
+  "assigned_lane": 1,
+  "hero_ids": [
+   1,
+   64
+  ],
+  "enemy_hero_ids": [
+   2,
+   4
+  ],
+  "wins": 38,
+  "matches_played": 64,
+  "sample_time_s": 900,
+  "net_worth_diff": 1092.2,
+  "sample_matches": 64,
+  "stats": {}
+ },
+ {
+  "assigned_lane": 1,
+  "hero_ids": [
+   1,
+   7
+  ],
+  "enemy_hero_ids": [
+   2,
+   66
+  ],
+  "wins": 22,
+  "matches_played": 63,
+  "sample_time_s": 900,
+  "net_worth_diff": -481.5,
+  "sample_matches": 63,
+  "stats": {}
+ },
+ {
+  "assigned_lane": 1,
+  "hero_ids": [
+   1,
+   67
+  ],
+  "enemy_hero_ids": [
+   2,
+   20
+  ],
+  "wins": 26,
+  "matches_played": 60,
+  "sample_time_s": 900,
+  "net_worth_diff": 477.9,
+  "sample_matches": 60,
+  "stats": {}
+ },
+ {
+  "assigned_lane": 1,
+  "hero_ids": [
+   1,
+   63
+  ],
+  "enemy_hero_ids": [
+   2,
+   31
+  ],
+  "wins": 24,
+  "matches_played": 60,
+  "sample_time_s": 900,
+  "net_worth_diff": 637.2,
+  "sample_matches": 60,
+  "stats": {}
+ }
+]

@@ -1,0 +1,61 @@
+[
+ {
+  "source": "forum",
+  "title": "09-29-2026",
+  "pub_date": "2026-10-15T03:12:00Z",
+  "link": "https://forums.playdeadlock.com/threads/09-29-2026.166726/",
+  "guid": {
+   "is_perma_link": false,
+   "text": "urn:xenforo:thread:166726"
+  },
+  "category": {
+   "domain": "https://forums.playdeadlock.com/forums/changelog.10/",
+   "text": "Changelog"
+  },
+  "content": "<div class=\"bbWrapper\"><div class=\"bbCodeBlock bbCodeBlock--unfurl    js-unfurl fauxBlockLink\"\n\t\tdata-unfurl=\"true\" data-result-id=\"11817\" data-result-token=\"1792176856:7602063edba0a4df0750b03279e2cfacbfe598f0af642e196672de0a38c3d51e\" data-url=\"https://store.steampowered.com/news/app/1422450/view/69"
+ },
+ {
+  "source": "steam",
+  "title": " Minor Update - 10-14-2026",
+  "pub_date": "2026-10-15T03:11:58Z",
+  "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "guid": {
+   "is_perma_link": true,
+   "text": "https://store.steampowered.com/news/app/1422450/view/669505296465396213"
+  },
+  "content": "<p class=\"bb_paragraph\">- Radiant Regeneration: Spirit scaling reduced from 0.04 to 0.035<br><br>- Baba: Spirit Resistance scaling reduced from 0.12 to 0.1<br>- Baba: Now has -7% Base Bullet Resistance<br>- Baba: Threadsap - Spirit reduction on enemies now ends when Baba dies<br>- Baba: Threadsap - "
+ },
+ {
+  "source": "steam",
+  "title": "Fairfax Industries Employee Spotlight",
+  "pub_date": "2026-10-13T20:59:55Z",
+  "link": "https://store.steampowered.com/news/app/1422450/view/703281660030880788",
+  "guid": {
+   "is_perma_link": true,
+   "text": "https://store.steampowered.com/news/app/1422450/view/703281660030880788"
+  },
+  "content": "<img src=\"https://clan.fastly.steamstatic.com/images/45164767/02829fc9750a193799ea05d6e0ab0ef78b0cffa0/english.png\" data-fallback-src=\"https://clan.fastly.steamstatic.com/images/45164767/02829fc9750a193799ea05d6e0ab0ef78b0cffa0.png\" onerror=\"this.onerror=null; this.src=this.dataset.fallbackSrc;\"><br"
+ },
+ {
+  "source": "steam",
+  "title": "Make Your Move.",
+  "pub_date": "2026-10-09T21:00:04Z",
+  "link": "https://store.steampowered.com/news/app/1422450/view/703281660030879519",
+  "guid": {
+   "is_perma_link": true,
+   "text": "https://store.steampowered.com/news/app/1422450/view/703281660030879519"
+  },
+  "content": "<img src=\"https://clan.fastly.steamstatic.com/images/45164767/23db53380c461b7f978c620d5607f9b23271e10c/english.png\" data-fallback-src=\"https://clan.fastly.steamstatic.com/images/45164767/23db53380c461b7f978c620d5607f9b23271e10c.png\" onerror=\"this.onerror=null; this.src=this.dataset.fallbackSrc;\"><br"
+ },
+ {
+  "source": "steam",
+  "title": "Mind the Birds!",
+  "pub_date": "2026-10-06T20:59:54Z",
+  "link": "https://store.steampowered.com/news/app/1422450/view/703281025618282871",
+  "guid": {
+   "is_perma_link": true,
+   "text": "https://store.steampowered.com/news/app/1422450/view/703281025618282871"
+  },
+  "content": "<img src=\"https://clan.fastly.steamstatic.com/images/45164767/720ba4e0f1b1ed105708f7b15cdfc7ad95bfdb30/english.png\" data-fallback-src=\"https://clan.fastly.steamstatic.com/images/45164767/720ba4e0f1b1ed105708f7b15cdfc7ad95bfdb30.png\" onerror=\"this.onerror=null; this.src=this.dataset.fallbackSrc;\"><br"
+ }
+]

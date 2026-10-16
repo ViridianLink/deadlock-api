@@ -1,0 +1,27 @@
+[
+ {
+  "account_id": 909389303,
+  "badge": 0,
+  "rank": 0,
+  "subrank": 0,
+  "last_match": {
+   "match_id": 28588084,
+   "start_time": 1732208514,
+   "player_rank_initial_display_rank": 0,
+   "player_rank_initial_flat_progress": null,
+   "player_rank_final_flat_progress": null,
+   "player_rank_desired_progress_change": null,
+   "player_rank_initial_calibration_games": null,
+   "player_rank_initial_demotion_protection_games": null,
+   "player_rank_consumed_demotion_protection": null,
+   "player_rank_initial_win_streak": null
+  }
+ },
+ {
+  "account_id": 22202,
+  "badge": 0,
+  "rank": 0,
+  "subrank": 0,
+  "last_match": null
+ }
+]

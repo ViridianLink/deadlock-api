@@ -1,0 +1,156 @@
+[package]
+name = "deadlock-api"
+version = "0.1.0"
+edition = "2024"
+description = "Typed async client for the deadlock-api.com Deadlock API"
+repository = "https://github.com/ViridianLink/deadlock-api"
+readme = "README.md"
+keywords = ["deadlock", "valve", "api", "client"]
+categories = ["api-bindings", "games"]
+
+[lints.rust]
+unsafe_code = "deny"
+
+unused = { level = "warn", priority = -1 }
+unused_imports = "deny"
+unused_must_use = "deny"
+
+unreachable_pub = "warn"
+unused_qualifications = "warn"
+
+# missing_debug_implementations = "warn"
+
+rust_2018_idioms = { level = "deny", priority = -1 }
+
+# Catch accidental lifetime elision weirdness
+elided_lifetimes_in_paths = "deny"
+
+# Common correctness footguns
+noop_method_call = "deny"
+redundant_lifetimes = "deny"
+single_use_lifetimes = "warn"
+trivial_casts = "warn"
+trivial_numeric_casts = "warn"
+variant_size_differences = "warn"
+
+# Future compatibility
+future_incompatible = { level = "deny", priority = -1 }
+
+[lints.clippy]
+
+# Correctness / panic prevention
+
+unwrap_used = "deny"
+expect_used = "deny"
+
+panic = "deny"
+panic_in_result_fn = "deny"
+unreachable = "deny"
+
+todo = "deny"
+unimplemented = "deny"
+dbg_macro = "deny"
+
+indexing_slicing = "warn"
+string_slice = "warn"
+
+unchecked_time_subtraction = "warn"
+
+# Async correctness
+
+await_holding_lock = "deny"
+await_holding_refcell_ref = "deny"
+
+unused_async = "warn"
+
+# Performance
+
+large_futures = "warn"
+large_stack_arrays = "warn"
+
+redundant_clone = "warn"
+inefficient_to_string = "warn"
+
+rc_buffer = "warn"
+clone_on_ref_ptr = "warn"
+
+# API quality
+
+semicolon_if_nothing_returned = "warn"
+
+must_use_candidate = "warn"
+return_self_not_must_use = "warn"
+
+missing_const_for_fn = "warn"
+
+# Error handling
+
+result_large_err = "warn"
+map_err_ignore = "warn"
+unwrap_in_result = "warn"
+error_impl_error = "warn"
+
+# Style / maintainability
+
+wildcard_imports = "warn"
+wildcard_enum_match_arm = "warn"
+
+manual_assert = "warn"
+manual_ok_or = "warn"
+
+match_same_arms = "warn"
+
+# Keeping attributes honest (excellent for AI agents)
+allow_attributes_without_reason = "warn"
+allow_attributes = "warn"
+
+# Memory and Synchronization
+mem_forget = "deny"
+mutex_atomic = "warn"
+rc_mutex = "warn"
+
+# Pedantic + nursery
+
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+
+# Noise reductions
+
+module_name_repetitions = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+
+struct_excessive_bools = "allow"
+too_many_lines = "allow"
+
+similar_names = "allow"
+
+redundant_pub_crate = "allow"
+
+# Often counterproductive in real systems
+implicit_return = "allow"
+single_call_fn = "allow"
+single_match_else = "allow"
+
+[dependencies]
+jiff = { version = "*", default-features = false, features = [
+  "serde",
+  "std",
+] }
+reqwest = { version = "*", default-features = false, features = [
+  "rustls",
+  "http2",
+  "query",
+] }
+serde = { version = "*", default-features = false, features = ["derive"] }
+serde_json = { version = "*", default-features = false, features = ["std"] }
+tokio = { version = "*", default-features = false, features = ["time"] }
+
+[dev-dependencies]
+tokio = { version = "*", features = [
+  "macros",
+  "rt",
+  "net",
+  "io-util",
+  "test-util",
+] }

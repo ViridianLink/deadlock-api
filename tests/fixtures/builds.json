@@ -1,0 +1,926 @@
+[
+ {
+  "hero_build": {
+   "hero_id": 1,
+   "hero_build_id": 1174,
+   "author_account_id": 909389303,
+   "last_updated_timestamp": 1725176956,
+   "publish_timestamp": null,
+   "name": "INFERNUUS 80% winrate twitch magven0m",
+   "description": "80 % winrate with this build",
+   "language": 0,
+   "version": 7,
+   "origin_build_id": 1174,
+   "tags": [
+    0,
+    0,
+    0
+   ],
+   "development_build": null,
+   "details": {
+    "mod_categories": [
+     {
+      "name": "first 100 % buy items ",
+      "width": 423.0,
+      "height": 246.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 2678489038,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1342610602,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 668299740,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "100% buy items",
+      "width": 356.0,
+      "height": 236.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 558396679,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3399065363,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "100% op",
+      "width": 564.0,
+      "height": 274.0,
+      "description": "TB buy 100% vs TANKS",
+      "mods": [
+       {
+        "ability_id": 968099481,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1998374645,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1797283378,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3270001687,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1144549437,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3696726732,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "MID GAME",
+      "width": 453.0,
+      "height": 296.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 2447176615,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2121044373,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 7409189,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2533252781,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2971868509,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 876563814,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2081037738,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "LATE GAME",
+      "width": 975.0,
+      "height": 140.0,
+      "description": "ECHO SHARD = 2 times u can use FLAME DASH, Ricochet = amazing farm",
+      "mods": [
+       {
+        "ability_id": 3612042342,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2820116164,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3005970438,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 630839635,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 865846625,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2480592370,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "Full build weapon",
+      "width": 243.0,
+      "height": 303.9676,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 3270001687,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2095565695,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1144549437,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2480592370,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "V7ITALITY",
+      "width": 269.0,
+      "height": 301.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 2447176615,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 876563814,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 558396679,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 865846625,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "SPIRIT| SP => FLAME DASH",
+      "width": 252.0,
+      "height": 298.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 2121044373,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2533252781,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1292979587,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3696726732,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "FLEX",
+      "width": 231.0,
+      "height": 292.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 3612042342,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2820116164,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3005970438,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 630839635,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "VS PHYSICAL DMG",
+      "width": 211.0,
+      "height": 103.0,
+      "description": "",
+      "mods": [
+       {
+        "ability_id": 1378931225,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "VS STUNS,SLOWS",
+      "width": 269.0,
+      "height": 144.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 3731635960,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "SKill max 3>2>1>2>2",
+      "width": 537.0,
+      "height": 139.0,
+      "description": "you need to improve skill 2 for -20 cd.",
+      "mods": [],
+      "optional": null
+     },
+     {
+      "name": "UPD 08.03.24 ",
+      "width": 469.0,
+      "height": 141.0,
+      "description": "OP VS ALL STUNS ",
+      "mods": [
+       {
+        "ability_id": 1644605047,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     }
+    ],
+    "ability_order": {
+     "currency_changes": [
+      {
+       "ability_id": 3516947824,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      }
+     ]
+    }
+   }
+  },
+  "num_favorites": 77623,
+  "num_ignores": null,
+  "num_reports": null,
+  "num_weekly_favorites": null,
+  "rollup_category": null
+ },
+ {
+  "hero_build": {
+   "hero_id": 1,
+   "hero_build_id": 34235,
+   "author_account_id": 316211545,
+   "last_updated_timestamp": 1730616761,
+   "publish_timestamp": null,
+   "name": "B\u7ad9\u5c0f\u9b54\u6cd5\u5e08\u9ed1\u661f\u661f \u6c38\u751f\u62d6\u628a\u6d41\u706b\u7537\u4e00\u952e\u7b26\u6587",
+   "description": "\u4f20\u706b\u5f00\u9ed1\u7fa4\uff1a856847281",
+   "language": 6,
+   "version": 8,
+   "origin_build_id": 0,
+   "tags": [
+    0,
+    0,
+    0
+   ],
+   "development_build": null,
+   "details": {
+    "mod_categories": [
+     {
+      "name": "\u5bf9\u7ebf\u671f",
+      "width": 769.0,
+      "height": 136.0,
+      "description": "\u524d\u671f\u5229\u7528\u6b66\u5668\u5f3a\u52bf\u538b\u597d\u6b63\u53cd\u8865\uff0c\u6709\u5927\u62db\u7684\u90a3\u6ce2\u5bf9\u62fc\u975e\u5e38\u5f3a\u529b\uff0c\u6839\u636e\u5bf9\u9762\u60c5\u51b5\u9009\u62e9\u4e3b2\u8fd8\u662f\u4e3b3",
+      "mods": [
+       {
+        "ability_id": 1248737459,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 668299740,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1797283378,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 968099481,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 558396679,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3399065363,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1144549437,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "\u538b\u529b\u5927\u51fa",
+      "width": 123.0,
+      "height": 146.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 1710079648,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "\u5229\u7528\u597d\u6b66\u5668\u4f18\u52bf\u8d56\u597d\u7ebf\uff0c\u6709\u5927\u62db\u7684\u90a3\u4e00\u6ce2\u57fa\u672c\u6ca1\u6709\u4eba\u6253\u5f97\u8fc7\u4f60",
+      "width": 69.0,
+      "height": 152.0,
+      "description": null,
+      "mods": [],
+      "optional": null
+     },
+     {
+      "name": "\u987a\u7740\u51fa\u5c31\u597d",
+      "width": 774.0,
+      "height": 119.0,
+      "description": "\u51b2\u8fc7\u53bb\u5c31\u662f\u6d82\u6cb9\u7136\u540e\u54d2\u54d2\u54d2\u54d2\u54d2\u54d2",
+      "mods": [
+       {
+        "ability_id": 2081037738,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2951612397,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3696726732,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 876563814,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2447176615,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2566692615,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 7409189,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "\u51fa\u5230\u5927\u5438\u8840\u83b7\u5f97\u6c38\u751f",
+      "width": 983.0,
+      "height": 139.0,
+      "description": "\u6c38\u751f\u4e86\u4ee5\u540e\u5f00\u59cb\u731b\u8865\u4f24\u5bb3\uff0c\u6709\u4f24\u5bb3\u4e4b\u540e\u5c31\u7b49\u4e8e\u6709\u4e86\u62d6\u628a\uff0c\u6709\u62d6\u628a\u5c31\u53ef\u4ee5\u7ed9\u62d6\u628a\u6cbe\u4e0a\u5947\u602a\u7684\u4e1c\u897f",
+      "mods": [
+       {
+        "ability_id": 2480592370,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3005970438,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2717651715,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 865846625,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3612042342,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2226497419,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2037039379,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 1102081447,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2533252781,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     },
+     {
+      "name": "\u8d85\u7ea7\u5927\u540e\u671f\u66ff\u6362\u88c5",
+      "width": 568.0,
+      "height": 132.0,
+      "description": null,
+      "mods": [
+       {
+        "ability_id": 4003032160,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 339443430,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 2617435668,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       },
+       {
+        "ability_id": 3357231760,
+        "annotation": null,
+        "required_flex_slots": null,
+        "sell_priority": null,
+        "imbue_target_ability_id": null
+       }
+      ],
+      "optional": null
+     }
+    ],
+    "ability_order": {
+     "currency_changes": [
+      {
+       "ability_id": 1593133799,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 2,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 1593133799,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 3516947824,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 1,
+       "delta": -1,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 491391007,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 1,
+       "delta": -2,
+       "annotation": null
+      },
+      {
+       "ability_id": 1142270357,
+       "currency_type": 1,
+       "delta": -5,
+       "annotation": null
+      }
+     ]
+    }
+   }
+  },
+  "num_favorites": 31214,
+  "num_ignores": null,
+  "num_reports": null,
+  "num_weekly_favorites": null,
+  "rollup_category": 1
+ }
+]

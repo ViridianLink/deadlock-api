@@ -15,8 +15,10 @@ pub use analytics::{
     ItemFlowEdge,
     ItemFlowNode,
     ItemFlowStats,
+    ItemStats,
     LaneMatchupStats,
     LaneSoulCurve,
+    PerformancePoint,
 };
 pub use build::{
     Build,

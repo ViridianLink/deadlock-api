@@ -1,0 +1,90 @@
+[
+  {
+    "game_time": 180,
+    "net_worth_avg": 1782.1055475764456,
+    "net_worth_std": 223.34065306670215,
+    "kills_avg": 0.12673010727668077,
+    "deaths_avg": 0.16950437692066983,
+    "assists_avg": 0.1748441399009877,
+    "creep_kills_avg": 6.71631054873988,
+    "denies_avg": 1.2298264476735323,
+    "player_damage_avg": 629.0668072148984
+  },
+  {
+    "game_time": 360,
+    "net_worth_avg": 3590.4973681782258,
+    "net_worth_std": 483.9121842900299,
+    "kills_avg": 0.3324139342124795,
+    "deaths_avg": 0.4659568236799769,
+    "assists_avg": 0.5149785161499978,
+    "creep_kills_avg": 14.391110380049508,
+    "denies_avg": 2.2332973597531867,
+    "player_damage_avg": 1401.2507572505485
+  },
+  {
+    "game_time": 540,
+    "net_worth_avg": 5866.072965465194,
+    "net_worth_std": 838.0329645478123,
+    "kills_avg": 0.6768047175756992,
+    "deaths_avg": 0.9429370842716701,
+    "assists_avg": 1.1835607419985468,
+    "creep_kills_avg": 21.692847766658236,
+    "denies_avg": 2.894599194736483,
+    "player_damage_avg": 2465.383766674294
+  },
+  {
+    "game_time": 720,
+    "net_worth_avg": 8645.595596350193,
+    "net_worth_std": 1252.4199983007497,
+    "kills_avg": 1.0423961354987727,
+    "deaths_avg": 1.4268842559367656,
+    "assists_avg": 2.071297474525129,
+    "creep_kills_avg": 29.081756796146756,
+    "denies_avg": 3.276234242166565,
+    "player_damage_avg": 3677.4675777111715
+  },
+  {
+    "game_time": 900,
+    "net_worth_avg": 11719.566842784545,
+    "net_worth_std": 1662.776271640958,
+    "kills_avg": 1.4332398967492135,
+    "deaths_avg": 1.949981850447689,
+    "assists_avg": 3.296476970234734,
+    "creep_kills_avg": 37.139075986125675,
+    "denies_avg": 3.4787912398160845,
+    "player_damage_avg": 5186.261974671292
+  },
+  {
+    "game_time": 1200,
+    "net_worth_avg": 17110.880647218335,
+    "net_worth_std": 2443.821523803595,
+    "kills_avg": 2.0716670843188907,
+    "deaths_avg": 2.802833515674182,
+    "assists_avg": 5.486261279156709,
+    "creep_kills_avg": 50.23869741401967,
+    "denies_avg": 3.7610703305972017,
+    "player_damage_avg": 8437.380631938375
+  },
+  {
+    "game_time": 1500,
+    "net_worth_avg": 23396.739051498917,
+    "net_worth_std": 3323.7109508622875,
+    "kills_avg": 2.715681623134132,
+    "deaths_avg": 3.654367064985672,
+    "assists_avg": 7.864375436221515,
+    "creep_kills_avg": 65.75386668859635,
+    "denies_avg": 4.0224146692729255,
+    "player_damage_avg": 12518.275896534054
+  },
+  {
+    "game_time": 1800,
+    "net_worth_avg": 30216.36240753259,
+    "net_worth_std": 4214.221414034011,
+    "kills_avg": 3.3572466165197254,
+    "deaths_avg": 4.483184474583747,
+    "assists_avg": 10.307540738396927,
+    "creep_kills_avg": 81.53341531351427,
+    "denies_avg": 4.268540225421527,
+    "player_damage_avg": 17433.70605071265
+  }
+]

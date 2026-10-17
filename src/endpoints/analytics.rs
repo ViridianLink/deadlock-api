@@ -6,8 +6,10 @@ use crate::model::{
     AbilityOrderStats,
     HeroCounterStats,
     ItemFlowStats,
+    ItemStats,
     LaneMatchupStats,
     LaneSoulCurve,
+    PerformancePoint,
 };
 use crate::rank::BadgeRange;
 
@@ -97,6 +99,36 @@ impl DeadlockClient {
                 ("hero_ids", hero_id.to_string()),
                 ("enemy_hero_ids", enemy_hero_id.to_string()),
             ],
+            badge,
+        );
+
+        self.get(&req, priority).await
+    }
+
+    pub async fn item_stats(
+        &self,
+        hero_id: u32,
+        badge: Option<BadgeRange>,
+        priority: Priority,
+    ) -> Result<Vec<ItemStats>> {
+        let req = request(
+            "/v1/analytics/item-stats",
+            vec![("hero_id", hero_id.to_string())],
+            badge,
+        );
+
+        self.get(&req, priority).await
+    }
+
+    pub async fn performance_curve(
+        &self,
+        hero_id: u32,
+        badge: Option<BadgeRange>,
+        priority: Priority,
+    ) -> Result<Vec<PerformancePoint>> {
+        let req = request(
+            "/v1/analytics/player-performance-curve",
+            vec![("hero_ids", hero_id.to_string()), ("resolution", "0".to_owned())],
             badge,
         );
 

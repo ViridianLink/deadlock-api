@@ -142,3 +142,40 @@ pub struct LaneSoulCurve {
     #[serde(default)]
     pub net_worth_diff_std: Vec<f64>,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ItemStats {
+    pub item_id: u32,
+    pub wins: u64,
+    pub losses: u64,
+    pub matches: u64,
+    #[serde(default)]
+    pub avg_buy_time_s: Option<f64>,
+    #[serde(default)]
+    pub avg_sell_time_s: Option<f64>,
+}
+
+impl ItemStats {
+    #[must_use]
+    pub fn win_rate(&self) -> f64 {
+        ratio(self.wins, self.matches)
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct PerformancePoint {
+    pub game_time: u32,
+    pub net_worth_avg: f64,
+    #[serde(default)]
+    pub net_worth_std: f64,
+    #[serde(default)]
+    pub kills_avg: f64,
+    #[serde(default)]
+    pub deaths_avg: f64,
+    #[serde(default)]
+    pub assists_avg: f64,
+    #[serde(default)]
+    pub creep_kills_avg: f64,
+    #[serde(default)]
+    pub denies_avg: f64,
+}

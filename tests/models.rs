@@ -9,10 +9,12 @@ use deadlock_api::model::{
     Item,
     ItemFlowStats,
     ItemKind,
+    ItemStats,
     LaneMatchupStats,
     LaneSoulCurve,
     MatchMetadata,
     PatchNote,
+    PerformancePoint,
     Rank,
     StatValue,
 };
@@ -25,6 +27,8 @@ const RANKS: &str = include_str!("fixtures/ranks.json");
 const PATCHES: &str = include_str!("fixtures/patches_v2.json");
 const ITEM_FLOW: &str = include_str!("fixtures/item_flow.json");
 const ABILITY_ORDER: &str = include_str!("fixtures/ability_order.json");
+const ITEM_STATS: &str = include_str!("fixtures/item_stats.json");
+const PERFORMANCE_CURVE: &str = include_str!("fixtures/performance_curve.json");
 const HERO_COUNTER: &str = include_str!("fixtures/hero_counter.json");
 const LANE_MATCHUP: &str = include_str!("fixtures/lane_matchup.json");
 const LANE_SOUL_CURVE: &str = include_str!("fixtures/lane_soul_curve.json");
@@ -272,4 +276,24 @@ fn match_metadata_round_trips_with_an_rfc_3339_start_time() {
     assert_eq!(before.match_id, after.match_id);
     assert_eq!(before.start_time, after.start_time);
     assert_eq!(before.players.len(), after.players.len());
+}
+
+#[test]
+fn item_stats_decode_with_buy_times() {
+    let stats: Vec<ItemStats> = decode(ITEM_STATS);
+
+    let first = stats.first().unwrap();
+    assert!(first.matches > 0);
+    assert!(first.avg_buy_time_s.is_some());
+    assert_round_trips::<Vec<ItemStats>>(ITEM_STATS);
+}
+
+#[test]
+fn performance_curve_decodes_absolute_times() {
+    let points: Vec<PerformancePoint> = decode(PERFORMANCE_CURVE);
+
+    assert_eq!(points.first().unwrap().game_time, 180);
+    let times: Vec<u32> = points.iter().map(|point| point.game_time).collect();
+    assert!(times.is_sorted());
+    assert!(points.iter().all(|point| point.net_worth_avg > 0.0));
 }

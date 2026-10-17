@@ -1,0 +1,80 @@
+[
+  {
+    "item_id": 7409189,
+    "bucket": 0,
+    "wins": 99865,
+    "losses": 86615,
+    "matches": 186480,
+    "players": 75112,
+    "avg_buy_time_s": 1174.0646074646074,
+    "avg_sell_time_s": 1980.6827801523025,
+    "avg_buy_time_relative": 51.767456601114255,
+    "avg_sell_time_relative": 78.77060986641509,
+    "sold": 86801
+  },
+  {
+    "item_id": 26002154,
+    "bucket": 0,
+    "wins": 4725,
+    "losses": 3802,
+    "matches": 8527,
+    "players": 3217,
+    "avg_buy_time_s": 640.2377154919667,
+    "avg_sell_time_s": 1688.2495888157894,
+    "avg_buy_time_relative": 29.42834142832347,
+    "avg_sell_time_relative": 70.92234330897661,
+    "sold": 4864
+  },
+  {
+    "item_id": 84321454,
+    "bucket": 0,
+    "wins": 18166,
+    "losses": 15390,
+    "matches": 33556,
+    "players": 14185,
+    "avg_buy_time_s": 1083.5914590535224,
+    "avg_sell_time_s": 1780.1020379479971,
+    "avg_buy_time_relative": 47.81919506098649,
+    "avg_sell_time_relative": 73.60377741128323,
+    "sold": 21345
+  },
+  {
+    "item_id": 98582110,
+    "bucket": 0,
+    "wins": 19516,
+    "losses": 19044,
+    "matches": 38560,
+    "players": 21436,
+    "avg_buy_time_s": 668.0711099585062,
+    "avg_sell_time_s": 2317.721098011614,
+    "avg_buy_time_relative": 30.5906267048702,
+    "avg_sell_time_relative": 83.03883747937184,
+    "sold": 5683
+  },
+  {
+    "item_id": 112198670,
+    "bucket": 0,
+    "wins": 5819,
+    "losses": 6116,
+    "matches": 11935,
+    "players": 7557,
+    "avg_buy_time_s": 1226.8109761206535,
+    "avg_sell_time_s": 2210.8116826503924,
+    "avg_buy_time_relative": 53.29402188691861,
+    "avg_sell_time_relative": 80.27183324903744,
+    "sold": 2294
+  },
+  {
+    "item_id": 334300056,
+    "bucket": 0,
+    "wins": 28251,
+    "losses": 24606,
+    "matches": 52857,
+    "players": 23114,
+    "avg_buy_time_s": 1335.603742172276,
+    "avg_sell_time_s": 2167.745180217938,
+    "avg_buy_time_relative": 59.44392203725659,
+    "avg_sell_time_relative": 80.09701432375887,
+    "sold": 1193
+  }
+]

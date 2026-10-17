@@ -14,6 +14,7 @@ use deadlock_api::model::{
     MatchMetadata,
     PatchNote,
     Rank,
+    StatValue,
 };
 use serde::Serialize;
 use serde::de::DeserializeOwned;
@@ -31,6 +32,10 @@ const BUILDS: &str = include_str!("fixtures/builds.json");
 const RANK_BATCH: &str = include_str!("fixtures/rank_batch.json");
 const METADATA_BULK: &str = include_str!("fixtures/metadata_bulk.json");
 
+const HERO_KIT: &str = include_str!("fixtures/hero_kit.json");
+
+const FLAME_DASH: u32 = 3_516_947_824;
+const INFERNUS_WEAPON: u32 = 556_186_193;
 const SOUL_URN: u32 = 2_521_299_219;
 const KNOWN_PLAYER: u32 = 35_803_007;
 
@@ -55,6 +60,60 @@ fn heroes_decode_with_their_flags_and_images() {
     assert_eq!(infernus.class_name, "hero_inferno");
     assert!(infernus.player_selectable && !infernus.disabled);
     assert!(infernus.images.icon_hero_card.is_some());
+}
+
+#[test]
+fn hero_kits_decode_stats_and_slots() {
+    let heroes: Vec<Hero> = decode(HEROES);
+
+    let infernus = heroes.iter().find(|hero| hero.id == 1).unwrap();
+    let health = infernus.starting_stats.get("max_health").unwrap();
+    assert!(matches!(health.value, StatValue::Number(_)));
+    assert_eq!(
+        infernus.items.get("signature2").map(String::as_str),
+        Some("ability_flame_dash")
+    );
+    assert!(!infernus.standard_level_up_upgrades.is_empty());
+}
+
+#[test]
+fn abilities_decode_properties_upgrades_and_owner() {
+    let items: Vec<Item> = decode(HERO_KIT);
+
+    let dash = items.iter().find(|item| item.id == FLAME_DASH).unwrap();
+    assert_eq!(dash.hero, Some(1));
+    assert_eq!(dash.kind, ItemKind::Ability);
+    assert_eq!(
+        dash.properties.get("AbilityCooldown").unwrap().label.as_deref(),
+        Some("Cooldown")
+    );
+    assert_eq!(
+        dash.properties.get("DashSpeed").unwrap().value,
+        Some(StatValue::Text("12m".to_owned()))
+    );
+    assert_eq!(dash.upgrades.len(), 3);
+    let first = dash.upgrades.first().unwrap().property_upgrades.first().unwrap();
+    assert_eq!(first.name, "AbilityCooldown");
+    assert_eq!(first.bonus, Some(StatValue::Number(-12.0)));
+}
+
+#[test]
+fn weapons_decode_curated_stats() {
+    let items: Vec<Item> = decode(HERO_KIT);
+
+    let weapon = items.iter().find(|item| item.id == INFERNUS_WEAPON).unwrap();
+    assert_eq!(weapon.weapon_info.clip_size, Some(27.0));
+    assert_eq!(weapon.weapon_info.bullet_damage, Some(5.5));
+}
+
+#[test]
+fn stat_values_parse_numbers_from_text() {
+    assert_eq!(StatValue::Text("20m".to_owned()).as_f64(), Some(20.0));
+    assert_eq!(StatValue::Text("0.1".to_owned()).as_f64(), Some(0.1));
+    assert_eq!(StatValue::Text("12%".to_owned()).as_f64(), Some(12.0));
+    assert_eq!(StatValue::Number(3.0).as_f64(), Some(3.0));
+    assert_eq!(StatValue::Text("abc".to_owned()).as_f64(), None);
+    assert_eq!(StatValue::Number(25.0).to_string(), "25");
 }
 
 #[test]
@@ -196,6 +255,8 @@ fn an_integer_start_time_is_accepted() {
 #[test]
 fn cached_models_round_trip_through_json() {
     assert_round_trips::<Vec<Hero>>(HEROES);
+    assert_round_trips::<Vec<Item>>(ITEMS);
+    assert_round_trips::<Vec<Item>>(HERO_KIT);
     assert_round_trips::<ItemFlowStats>(ITEM_FLOW);
     assert_round_trips::<Vec<Build>>(BUILDS);
 }

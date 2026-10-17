@@ -6,6 +6,7 @@ mod metadata;
 mod patch;
 mod player;
 mod rank;
+mod value;
 
 pub use analytics::{
     AbilityOrderStats,
@@ -26,9 +27,17 @@ pub use build::{
     HeroBuild,
     ModCategory,
 };
-pub use hero::{Hero, HeroImages};
-pub use item::{Item, ItemKind};
+pub use hero::{Hero, HeroImages, HeroStat};
+pub use item::{
+    AbilityUpgrade,
+    Item,
+    ItemKind,
+    ItemProperty,
+    PropertyUpgrade,
+    WeaponInfo,
+};
 pub use metadata::{MatchMetadata, MatchPlayer, PlayerItem, StatSnapshot};
 pub use patch::{PatchGuid, PatchNote};
 pub use player::{AccountRank, RankedMatch};
 pub use rank::{Rank, RankImages};
+pub use value::StatValue;

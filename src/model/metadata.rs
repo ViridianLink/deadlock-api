@@ -87,7 +87,7 @@ enum RawStartTime {
 
 fn parse_text(text: &str) -> Result<jiff::Timestamp, jiff::Error> {
     match jiff::civil::DateTime::strptime(START_TIME_FORMAT, text) {
-        Ok(datetime) => Ok(datetime.to_zoned(TimeZone::UTC)?.timestamp()),
+        Ok(datetime) => Ok(datetime.to_zoned_datetime(TimeZone::UTC)?.timestamp()),
         Err(_) => text.parse(),
     }
 }

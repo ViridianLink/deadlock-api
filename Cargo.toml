@@ -133,14 +133,11 @@ single_call_fn = "allow"
 single_match_else = "allow"
 
 [dependencies]
-jiff = { version = "*", default-features = false, features = [
-  "serde",
-  "std",
-] }
+jiff = { version = "*", default-features = false, features = ["serde", "std"] }
 reqwest = { version = "0.13", default-features = false, features = [
-  "rustls",
-  "http2",
-  "query",
+    "rustls",
+    "http2",
+    "query",
 ] }
 serde = { version = "*", default-features = false, features = ["derive"] }
 serde_json = { version = "*", default-features = false, features = ["std"] }
@@ -148,9 +145,9 @@ tokio = { version = "*", default-features = false, features = ["time"] }
 
 [dev-dependencies]
 tokio = { version = "*", features = [
-  "macros",
-  "rt",
-  "net",
-  "io-util",
-  "test-util",
+    "macros",
+    "rt",
+    "net",
+    "io-util",
+    "test-util",
 ] }

@@ -4,7 +4,14 @@ use std::fmt::Write as _;
 use std::sync::{Arc, Mutex};
 use std::time::Duration;
 
-use deadlock_api::{DeadlockApiError, DeadlockClient, Priority};
+use deadlock_api::{
+    Bucket,
+    BucketConfig,
+    DeadlockApiError,
+    DeadlockClient,
+    Limiter,
+    Priority,
+};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 use tokio::net::{TcpListener, TcpStream};
 
@@ -199,4 +206,174 @@ async fn player_ranks_are_requested_in_chunks_of_a_thousand() {
 
     assert_eq!(ranks.len(), 4);
     assert_eq!(count(&requests), 2);
+}
+
+#[tokio::test]
+async fn get_raw_returns_the_body_verbatim() {
+    let body = "{\"a\": 1,  \"b\":[2]}";
+    let (base, requests) = spawn_mock(Reply::ok(body)).await;
+
+    let got = client(&base, None)
+        .get_raw(
+            "/v1/assets/heroes?client_version=6123",
+            Bucket::Assets,
+            Priority::Interactive,
+        )
+        .await
+        .unwrap();
+
+    assert_eq!(got, body);
+    let head = first_head(&requests);
+    assert!(
+        head.starts_with("GET /v1/assets/heroes?client_version=6123 HTTP/1.1"),
+        "{head}"
+    );
+}
+
+#[tokio::test]
+async fn get_raw_maps_not_found() {
+    let (base, _) =
+        spawn_mock(Reply { status: 404, headers: Vec::new(), body: "" }).await;
+
+    let err = client(&base, None)
+        .get_raw("/v1/x", Bucket::Assets, Priority::Interactive)
+        .await
+        .unwrap_err();
+
+    assert!(matches!(err, DeadlockApiError::NotFound), "{err:?}");
+}
+
+#[tokio::test]
+async fn get_raw_maps_server_errors() {
+    for status in [500, 400] {
+        let (base, _) =
+            spawn_mock(Reply { status, headers: Vec::new(), body: "" }).await;
+
+        let err = client(&base, None)
+            .get_raw("/v1/x", Bucket::Assets, Priority::Interactive)
+            .await
+            .unwrap_err();
+
+        assert!(
+            matches!(&err, DeadlockApiError::Http { status: s } if s.as_u16() == status),
+            "{err:?}"
+        );
+    }
+}
+
+#[tokio::test]
+async fn get_raw_busy_blocks_the_given_bucket() {
+    let (base, requests) = spawn_mock(busy_reply()).await;
+    let cfg =
+        BucketConfig { capacity: 100, per: Duration::from_secs(1), reserved: 0 };
+    let limiter = Limiter::with_configs(
+        [(Bucket::Assets, cfg), (Bucket::Analytics, cfg)],
+        Duration::ZERO,
+    );
+    let client =
+        DeadlockClient::builder().base_url(&base).limiter(limiter).build().unwrap();
+
+    let err = client
+        .get_raw("/v1/x", Bucket::Assets, Priority::Interactive)
+        .await
+        .unwrap_err();
+
+    assert!(matches!(err, DeadlockApiError::Busy { .. }), "{err:?}");
+    assert_eq!(err.retry_after(), Some(Duration::from_secs(7)));
+    assert_eq!(count(&requests), 1);
+
+    let err = client
+        .get_raw("/v1/x", Bucket::Assets, Priority::Interactive)
+        .await
+        .unwrap_err();
+
+    assert!(matches!(err, DeadlockApiError::Busy { .. }), "{err:?}");
+    assert_eq!(count(&requests), 1);
+
+    let _ = client.get_raw("/v1/x", Bucket::Analytics, Priority::Interactive).await;
+
+    assert_eq!(count(&requests), 2);
+}
+
+#[tokio::test]
+async fn get_raw_rejects_a_relative_path() {
+    let (base, requests) = spawn_mock(Reply::ok("{}")).await;
+    let client = client(&base, None);
+
+    for path in ["v1/assets/heroes", ".evil.example/x"] {
+        let err = client
+            .get_raw(path, Bucket::Assets, Priority::Interactive)
+            .await
+            .unwrap_err();
+
+        assert!(matches!(err, DeadlockApiError::InvalidPath { .. }), "{err:?}");
+    }
+
+    assert_eq!(count(&requests), 0);
+}
+
+#[tokio::test]
+async fn get_raw_sends_the_api_key() {
+    let (base, requests) = spawn_mock(Reply::ok("{}")).await;
+
+    client(&base, Some("k"))
+        .get_raw("/v1/x", Bucket::Assets, Priority::Interactive)
+        .await
+        .unwrap();
+
+    assert!(first_head(&requests).to_lowercase().contains("x-api-key: k"));
+}
+
+#[tokio::test]
+async fn a_base_path_prefix_is_kept() {
+    let (base, requests) = spawn_mock(Reply::ok(RANKS)).await;
+    let client = client(&format!("{base}/prefix/"), None);
+
+    client
+        .get_raw(
+            "/v1/assets/heroes?client_version=1",
+            Bucket::Assets,
+            Priority::Interactive,
+        )
+        .await
+        .unwrap();
+    let head = first_head(&requests);
+    assert!(
+        head.starts_with("GET /prefix/v1/assets/heroes?client_version=1 HTTP/1.1"),
+        "{head}"
+    );
+
+    client.ranks(Priority::Interactive).await.unwrap();
+    let head = requests.lock().unwrap().get(1).cloned().unwrap();
+    assert!(head.starts_with("GET /prefix/v1/assets/ranks HTTP/1.1"), "{head}");
+}
+
+#[test]
+fn an_invalid_base_url_is_rejected() {
+    let err = DeadlockClient::builder().base_url("not a url").build().unwrap_err();
+    assert!(
+        matches!(err, DeadlockApiError::InvalidBaseUrl { source: Some(_), .. }),
+        "{err:?}"
+    );
+
+    for url in ["mailto:a@b.c", "ftp://example.com", "https://example.com/?x=1"] {
+        let err = DeadlockClient::builder().base_url(url).build().unwrap_err();
+        assert!(
+            matches!(err, DeadlockApiError::InvalidBaseUrl { source: None, .. }),
+            "{url}: {err:?}"
+        );
+    }
+}
+
+#[tokio::test]
+async fn get_raw_drops_an_empty_query() {
+    let (base, requests) = spawn_mock(Reply::ok(RANKS)).await;
+
+    client(&base, None)
+        .get_raw("/v1/assets/ranks?", Bucket::Assets, Priority::Interactive)
+        .await
+        .unwrap();
+
+    let head = first_head(&requests);
+    assert!(head.starts_with("GET /v1/assets/ranks HTTP/1.1"), "{head}");
 }

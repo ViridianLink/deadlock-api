@@ -16,6 +16,8 @@ pub enum DeadlockApiError {
     Decode { path: String, source: serde_json::Error },
     Request(reqwest::Error),
     InvalidHeaderValue(InvalidHeaderValue),
+    InvalidPath { path: String },
+    InvalidBaseUrl { url: String, source: Option<url::ParseError> },
 }
 
 impl DeadlockApiError {
@@ -27,7 +29,9 @@ impl DeadlockApiError {
             | Self::Http { .. }
             | Self::Decode { .. }
             | Self::Request(_)
-            | Self::InvalidHeaderValue(_) => None,
+            | Self::InvalidHeaderValue(_)
+            | Self::InvalidPath { .. }
+            | Self::InvalidBaseUrl { .. } => None,
         }
     }
 }
@@ -48,6 +52,13 @@ impl Display for DeadlockApiError {
             },
             Self::Request(e) => write!(f, "request failed: {e}"),
             Self::InvalidHeaderValue(e) => write!(f, "invalid header value: {e}"),
+            Self::InvalidPath { path } => {
+                write!(f, "invalid request path `{path}`: it must start with `/`")
+            },
+            Self::InvalidBaseUrl { url, source } => {
+                write!(f, "invalid base URL `{url}`")?;
+                source.as_ref().map_or(Ok(()), |e| write!(f, ": {e}"))
+            },
         }
     }
 }
@@ -58,7 +69,12 @@ impl Error for DeadlockApiError {
             Self::Decode { source, .. } => Some(source),
             Self::Request(e) => Some(e),
             Self::InvalidHeaderValue(e) => Some(e),
-            Self::Busy { .. } | Self::NotFound | Self::Http { .. } => None,
+            Self::InvalidBaseUrl { source: Some(e), .. } => Some(e),
+            Self::Busy { .. }
+            | Self::NotFound
+            | Self::Http { .. }
+            | Self::InvalidPath { .. }
+            | Self::InvalidBaseUrl { source: None, .. } => None,
         }
     }
 }
